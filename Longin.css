@@ -1,0 +1,452 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/*共用區*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: #932621;
+    --brown: #B28649;
+    --beige: #F2E3C4;
+    --green: #596E13;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    /* 取消預設的底線裝飾 */
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family:
+        /* 中文 */
+        "微軟正黑體", "Microsoft JhengHei", sans-serif,
+        "Lexend", sans-serif;
+}
+
+/* 頁頭 */
+#myBtn {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    right: 30px;
+    bottom: 15px;
+    border: none; /* button原始線框去掉 */
+    background-color: transparent;/* button原始被景色改透明 */
+}
+
+
+.top {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #F2E3C4;
+}
+
+.logo {
+    align-items: flex-start;
+}
+
+.logo img {
+    width: 130px;
+    height: 55px;
+    margin-left: 50px;
+}
+
+.nav {
+    align-items: flex-end;
+    margin-left: 1100px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav li a {
+    font-size: 1rem;
+    color: #932621;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.nav li a img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.tab-content {
+    display: flex;
+    /* 將.tab-content設置為彈性盒子佈局 */
+    justify-content: center;
+    /* 在水平方向上居中對齊 */
+    align-items: center;
+    /* 在垂直方向上居中對齊 */
+}
+
+/* 登入 */
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.log {
+    width: 469px;
+    height: 100px;
+    border-radius: 200px 0 0 0;
+    border: 2px solid #932621;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log:hover {
+    background-color: #932621;
+
+}
+
+.log:hover h1,
+.log:hover h2 {
+    color: #fff;
+}
+
+.log a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.log h1 {
+    font-size: 1.5rem;
+    color: #B28649;
+}
+
+.log h2 {
+    font-size: 1rem;
+    color: #B28649;
+}
+
+
+
+#login {
+    width: 960px;
+    height: 450px;
+    border: 2px solid #932621;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 200px 0;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.top-row{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+/* 註冊 */
+.sign {
+    width: 469px;
+    height: 100px;
+    border-radius: 0 0 0 0;
+    border: 2px solid #B28649;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.sign:hover {
+    background-color: #B28649;
+}
+
+.sign:hover h1,
+.sign:hover h2 {
+    color: #fff;
+}
+
+.sign a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign h1 {
+    font-size: 1.5rem;
+    color: #B28649;
+}
+
+.sign h2 {
+    font-size: 1rem;
+    color: #B28649;
+}
+
+#signup {
+    width: 965px;
+    height: 500px;
+    border: 2px solid #B28649;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 200px 0;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.top-row01{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+
+
+label {
+    font-size: 1rem;
+    color: #B28649;
+}
+
+input[type="text1"] {
+    font-size: 0.8rem;
+    background-color: #F2E3C4;
+    border-color: #B28649;
+    border-radius: 10px;
+    width: 240px;
+    height: 55px;
+    margin: 10px;
+    outline: none;
+}
+
+
+input[type="text"] {
+    font-size: 0.8rem;
+    background-color: #F2E3C4;
+    border-color: #B28649;
+    border-radius: 10px;
+    width: 585px;
+    height: 55px;
+    margin: 10px;
+    outline: none;
+}
+
+.phon {
+    margin-left: 80px;
+}
+
+
+
+.forgot a {
+    color: #B28649;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 16px;
+}
+
+.warp01 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#id::placeholder{
+    color: #B28649;
+}
+
+
+/* 按鈕 */
+.button {
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    border-color: #B28649;
+    border-width: 0.5px;
+    margin-top: 30px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 410px;
+}
+
+
+/* 按鈕動態 */
+.button:hover {
+    background-color: #932621;
+}
+
+.button:hover a {
+    color: #fff;
+}
+
+.button:hover .arrow {
+    border-left: 1.8px solid #fff;
+
+}
+
+.button:hover .arrow::after {
+    background-color: #fff;
+}
+
+/* 按鈕動態結束 */
+
+
+.button a {
+    color: #B28649;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+/* 箭頭 */
+.arrow {
+    width: 25px;
+    height: 10px;
+    border-left: 1.8px solid #B28649;
+    transform: rotate(135deg);
+    margin-left: 24px;
+    margin-top: 12px;
+}
+
+.arrow::after {
+    content: "";
+    display: block;
+    width: 1.2px;
+    height: 45px;
+    background-color: #B28649;
+    transform: rotate(-45deg) translate(15px, 4px);
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 頁尾 */
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: #932621;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo{
+    width: 130px;
+    height: 50px;
+    background-image: url("./image/footer-logo.png");
+margin-top: 30px;
+}
+
+.phon{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.phon p{
+    color: #fff;
+    margin-left: 8px;
+}
+
+.phon img{
+    width: 20px;
+    height: 20px;
+}
+
+.home{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+}
+
+.home p{
+    color: #fff;
+    margin-left: 8px;
+}
+
+.home img{
+    width: 20px;
+    height: 20px;
+}
+
+.footernav{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footernav a{
+    color: #fff; 
+    margin: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.end{
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+
+.footertree{
+    width: 100%;
+    height: 210px;
+    position: absolute;
+    bottom: 0;
+}
+
+.up{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+     flex-direction: column;
+}

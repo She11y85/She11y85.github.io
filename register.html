@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蘋果小農園</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <!-- top up -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./image/top.png" alt=""></button>
+
+
+
+    <header><!--頁頭  -->
+        <div class="top">
+            <div class="logo"><a href="index.html"><img src="./image/logo.png" alt=""></a></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">商品一覽</a></li>
+                    <li><a href="register.html">採摘體驗</a></li>
+                    <li><a href="Aboutus.html">果園介紹</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="Longin.html">登入</a></li>
+                    <li><a href="index.html"><img src="./image/shopping cart.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main><!-- 內容 -->
+
+        <div class="register">
+            <div class="appleimg"></div>
+            <p>特別設計的蘋果採摘活動，讓您體驗當一日農夫的樂趣， <br>
+                親手採摘屬於自己的蘋果，感受豐收的喜悅和自然的魅力。<br>
+                從田間到餐桌，我們致力於提供最高品質的產品和難忘的農園體驗，<br>
+                讓您品味自然，享受健康。</p>
+            <img src="./image/register-tree.png" alt="">
+        </div>
+
+
+        <!--價格 -->
+
+        <div class="money">
+            <ul>
+                <li>
+                    <h2>蘋果採摘</h2>
+                    <h3>399/人</h3>
+                    <p>*體驗時間為20分 &nbsp;*5歲以下不收費 </p>
+                </li>
+
+                <li>
+                    <h2>手作體驗</h2>
+                    <h3>589/人</h3>
+                    <p>*體驗時間為1小時 &nbsp;*5歲以下不收費 </p>
+                </li>
+
+                <li>
+                    <h2>一日農夫</h2>
+                    <h3>799/人</h3>
+                    <p>*體驗時間為2小時 &nbsp;*5歲以下不收費 </p>
+                </li>
+            </ul>
+
+            <div class="line "></div>
+
+            <div class="text-box">
+                <div class="text">
+                    <h2>付款方法</h2>
+                    <p1>於活動當日，現場現金付款。現場不提供刷卡。</p1>
+                    <p2>5歲以下小朋友不收費。</p2>
+                </div>
+
+                <div class="text">
+                    <h2>是否報名成功</h2>
+                    <p1>報名成功後，將會傳送報名成功的E- mail至顧客您的信箱。</p1>
+                </div>
+
+                <div class="text">
+                    <h2>團體報名</h2>
+                    <p1>如需校外教學或是見習，超過15人以上，請來電洽詢。</p1>
+                </div>
+
+                <div class="text">
+                    <h2>取消體驗</h2>
+                    <p1>如需取消體驗，請提早來電通知。</p1>
+                    <p2>如體驗未到場也未通知的情況，將列為黑名單。</p2>
+                </div>
+
+                <div class="text">
+                    <h2>天災狀況</h2>
+                    <p1>如遇天況與災害發生，將不開放體驗活動。</p1>
+                    <p2>已報名之顧客，將直接取消體驗，敬請見諒。</p2>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 活動報名 -->
+
+        <div class="join">
+            <div class="join-in">
+                <h1>報名活動</h1>
+                <h2>join in</h2>
+            </div>
+
+            <div class="joinin">
+                <div class="join-row">
+                    <div class="join-wrap">
+                        <label for="req">*姓名 </label><br>
+                        <input type="text" name="account" id="id" title="" placeholder="" required autofocus>
+                    </div>
+
+                    <div class="join-wrap">
+                        <label for="req">*電話 </label><br>
+                        <input type="text" name="password" id="id" title="" placeholder="" required autofocus>
+                    </div>
+
+                    <div class="join-wrap">
+                        <label for="req">*Email </label><br>
+                        <input type="text" name="password" id="id" title="" placeholder="" required autofocus>
+                    </div>
+                </div>
+
+                <div class="join-row1">
+                    <div id="dd1" class="join-wrap1" tabindex="1">
+                        <label for="req">活動主題 </label><br>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <!-- 箭頭 -->
+                                <div class="arrow-container">
+                                    <i class="arrow01 down"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                <li><a href="#"><i class="icon-user"></i>蘋果採摘</a></li>
+                                <li><a href="#"><i class="icon-cog"></i>手做體驗</a></li>
+                                <li><a href="#"><i class="icon-remove"></i>一日農夫</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="dd2" class="join-wrap2" tabindex="1">
+                        <label for="req">活動場次 </label><br>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- 箭頭 -->
+                                <div class="arrow-container">
+                                    <i class="arrow01 down"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <li><a href="#"><i class="icon-user"></i>10/12(六)09:00~10:00</a></li>
+                                <li><a href="#"><i class="icon-cog"></i>10/13(日)09:00~10:00</a></li>
+                                <li><a href="#"><i class="icon-remove"></i>10/20(六)09:00~10:00</a></li>
+                                <li><a href="#"><i class="icon-remove"></i>10/21(日)09:00~10:00</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 加減 -->
+                    <div id="dd3" class="join-wrap3" tabindex="1">
+                        <label for="">參與人數</label>
+                        <div class="box">
+                            <div class="minus">-</div>
+                            <div class="num">1</div>
+                            <div class="add">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <div class="button">
+                <a href="">
+                    報名
+                    <div class="arrow"></div>
+                </a>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer><!--頁尾  -->
+        <div class="footer">
+
+            <div class="footertree">
+                <img src="./image/footer.png" alt="">
+            </div>
+
+            <div class="up">
+                <div class="footerlogo"></div>
+
+                <div class="phon">
+                    <img src="./image/phon.png" alt="">
+                    <p>03-312-4897</p>
+                </div>
+
+                <div class="home">
+                    <img src="./image/home.png" alt="">
+                    <p>32011桃園市楊梅區中正西路123號</p>
+                </div>
+
+                <div class="footernav">
+                    <a href="#">商品一覽</a>
+                    <a href="register.html">採摘體驗</a>
+                    <a href="Aboutus.html">果園介紹</a>
+                    <a href="#">常見問題</a>
+                    <a href="Longin.html">登入</a>
+                </div>
+
+                <div class="end">
+                    <p>© 2024 Pingguo Farm, 作品練習無商業用途</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 下拉選單 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <!-- 加減 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="./register.js"></script>
+
+</body>
+
+</html>

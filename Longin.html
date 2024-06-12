@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蘋果小農園登入</title>
+    <link rel="stylesheet" href="Longin.css">
+</head>
+
+<body>
+
+    <!-- top up -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./image/top.png" alt=""></button>
+
+
+    <header><!--頁頭  -->
+        <div class="top">
+            <div class="logo"><a href="index.html"><img src="./image/logo.png" alt=""></a></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">商品一覽</a></li>
+                    <li><a href="register.html">採摘體驗</a></li>
+                    <li><a href="Aboutus.html">果園介紹</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="Longin.html">登入</a></li>
+                    <li><a href="index.html"><img src="./image/shopping cart.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main><!-- 內容 -->
+
+        <div class="form">
+
+            <ul class="tab">
+                <li class="log"><a href="">
+                        <h1>會員登入</h1>
+                        <h2>Log in</h2>
+                    </a></li>
+                <li class="sign"><a href="">
+                        <h1>註冊會員</h1>
+                        <h2>Sign up</h2>
+                    </a></li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- 登入 -->
+                <div id="login">
+                    <form action="/" method="post">
+
+                        <div class="top-row">
+
+                            <div class="field-wrap">
+                                <label for="req">*帳號 </label><br>
+                                <input type="text" name="account" id="id" title="請輸入email" placeholder="@gmai.com"
+                                    required autofocus>
+                            </div>
+
+                            <div class="field-wrap">
+                                <label for="req">*密碼 </label><br>
+                                <input type="text" name="password" id="id" title="請輸入密碼" placeholder="請輸入密碼" required
+                                    autofocus>
+                            </div>
+
+                        </div>
+
+                        <p class="forgot"><a href="#">忘記密碼</a></p>
+
+
+                        <div class="button">
+                            <a href="">
+                                登入
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div id="signup">
+
+                    <form action="/" method="post">
+                        <div class="top-row01">
+                            <div class="warp01">
+                                <div class="field-wrap">
+                                    <label for="req">*姓名 </label><br>
+                                    <input type="text1" name="name" id="id" title="請輸入姓名" placeholder="請輸入姓名" required
+                                        autofocus>
+                                </div>
+
+                                <div class="field-wrap">
+                                    <div class="phon">
+                                        <label for="req">*電話 </label><br>
+                                        <input type="text1" name="phon" id="id" title="請輸入電話" placeholder="請輸入電話"
+                                            required autofocus>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="field-wrap">
+                                <label for="req">*帳號 </label><br>
+                                <input type="text" name="account" id="id" title="請輸入email" placeholder="@gmai.com"
+                                    required autofocus>
+                            </div>
+
+                            <div class="field-wrap">
+                                <label>
+                                    <label for="req">*密碼 </label><br>
+                                    <input type="text" name="password" id="id" title="請輸入密碼" placeholder="請輸入密碼"
+                                        required autofocus>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <a href="">
+                                註冊
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div><!-- tab-content -->
+
+        </div> <!-- /form -->
+
+    </main>
+
+
+
+    <footer><!--頁尾  -->
+        <div class="footer">
+
+            <div class="footertree">
+                <img src="./image/footer.png" alt="">
+            </div>
+
+            <div class="up">
+                <div class="footerlogo"></div>
+
+                <div class="phon">
+                    <img src="./image/phon.png" alt="">
+                    <p>03-312-4897</p>
+                </div>
+
+                <div class="home">
+                    <img src="./image/home.png" alt="">
+                    <p>32011桃園市楊梅區中正西路123號</p>
+                </div>
+
+                <div class="footernav">
+                    <a href="#">商品一覽</a>
+                    <a href="register.html">採摘體驗</a>
+                    <a href="Aboutus.html">果園介紹</a>
+                    <a href="#">常見問題</a>
+                    <a href="Longin.html">登入</a>
+                </div>
+
+                <div class="end">
+                    <p>© 2024 Pingguo Farm, 作品練習無商業用途</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    
+    <script src="./Longin.js"></script>
+
+
+</body>
+
+</html>
