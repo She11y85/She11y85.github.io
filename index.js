@@ -23,6 +23,35 @@ function scroll_arrow() {
 };
 
 
+jQuery(document).ready(function($) {
+  "use strict";
+  $('#carousel').owlCarousel( {
+          loop: true,
+          center: true,
+          items: 5,
+          margin: 10,
+          autoplay: true,
+          dots:true,
+      nav:false,
+          autoplayTimeout: 3000,
+          smartSpeed: 300,
+       /*  navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'], */
+        responsive: {
+              0: {
+                  items: 1
+              },
+              820: {
+                  items: 2
+              },
+              1170: {
+                  items: 4
+                  
+              }
+          } 
+      });
+  });
+
+
 
 //TOP按鈕
 // Get the button

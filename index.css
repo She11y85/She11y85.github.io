@@ -46,9 +46,33 @@ body {
     z-index: 99;
     right: 30px;
     bottom: 15px;
-    border: none; /* button原始線框去掉 */
-    background-color: transparent;/* button原始被景色改透明 */
+    border: none;
+    /* button原始線框去掉 */
+    background-color: transparent;
+    /* button原始被景色改透明 */
 }
+
+/* 要在原本CSS區塊下方 */
+/* 筆電的斷點 */
+@media (max-width:1440px) {
+    #myBtn {
+        right: 60px;
+        bottom: 20px;
+    }
+}
+
+/* 平板斷點 */
+@media(max-width:820px) {
+    #myBtn {
+        right: 30px;
+        bottom: 20px;
+    }
+
+}
+
+/* 手機斷點 */
+@media (max-width:640px) {}
+
 
 .top {
     width: 1440px;
@@ -60,7 +84,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 12%;
+    margin-left: 13%; 
     top: 720px;
 }
 
@@ -146,6 +170,103 @@ body {
 
 
 
+/* 要在原本CSS區塊下方 */
+/* 筆電板的斷點 */
+@media (max-width:1440px) {
+    .top {
+        width: 95%;
+        top: 400px;
+        height: 150px;
+        border-radius: 50px;
+       right: 45px;
+    }
+
+    .nav {
+        margin-left: 400px;
+    }
+
+    .banner {
+        height: 550px;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .tree01 {
+        top: 300px;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .scroll {
+        margin-left: 48%;
+        margin-top: 1%;
+        width: 35px;
+        height: 20px;
+    }
+
+    .scroll:hover {
+        margin-left: 48%;
+        margin-top: 1.5%;
+        width: 35px;
+        height: 20px;
+    }
+}
+
+/* 平板斷點 */
+@media(max-width:820px) {
+    .top {
+        top: 550px;
+        height: 120px;
+        border-radius: 50px;
+        right:25px;
+    }
+
+    .nav li a {
+        margin: 6px;
+    }
+
+    .nav {
+        margin-left: 100px;
+    }
+
+    .banner {
+        height: 650px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .tree01 {
+        top: 40%;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .scroll {
+        margin-left: 48%;
+        margin-top: 5.5%;
+        width: 30px;
+        height: 15px;
+    }
+
+    .scroll:hover {
+        margin-left: 48%;
+        margin-top: 6.5%;
+        width: 30px;
+        height: 15px;
+    }
+}
+
+/* 手機斷點 */
+@media (max-width:640px) {
+
+
+
+
+    
+}
+
+
+
 /* 熱銷商品 */
 
 .bestseller-box {
@@ -160,6 +281,12 @@ body {
     align-items: center;
     margin-top: 100px;
 }
+
+#carousel {
+    display: flex;
+    /* 将轮播项水平排列 */
+}
+
 
 .bestseller h1 {
     font-size: 1.5rem;
@@ -270,13 +397,13 @@ body {
     color: #fff;
     position: absolute;
     z-index: 1;
-    margin-left: 130px;
+    margin-left: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
     transform: rotate(-5deg);
-
+   top: 30px;
 }
 
 
@@ -296,6 +423,47 @@ body {
     font-size: 0.8rem;
     color: #B28649;
 }
+
+
+/* 要在原本CSS區塊下方 */
+/* 筆電板的斷點 */
+@media (max-width:1440px) {
+    .star-number {
+        margin-left: 127px;
+        width: 75px;
+        height: 55px;
+        top: 0;
+    }
+
+    .bestseller {
+        margin-top: 40px;
+    }
+
+}
+
+/* 平板斷點 */
+@media(max-width:820px) {
+    .star-number {
+        margin-left: 155px;
+        margin-top: 4px;
+        width: 65px;
+        height: 45px;
+    }
+
+    .mask-img1,
+    .mask-img2,
+    .mask-img3,
+    .mask-img4,
+    .mask-img5 {
+        width: 300px;
+        mask-size: 260px;
+        margin: 0 10px;
+    }
+
+
+}
+
+
 
 /* 商品一覽 */
 .Product {
@@ -413,6 +581,44 @@ body {
 }
 
 
+/* 要在原本CSS區塊下方 */
+/* 筆電板的斷點 */
+@media (max-width:1440px) {
+    .Product-img {
+        height: 500px;
+        margin-top: 30px;
+    }
+
+    .Product-list {
+        margin-left: 100px;
+    }
+}
+
+/* 平板斷點 */
+@media(max-width:820px) {
+    .Product {
+        height: 340px;
+        margin-top: 80px;
+    }
+
+    .Product-list {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+
+    .Product-img {
+        width: 350px;
+        height: 400px;
+        border-radius: 0 250px 0 0;
+        margin-left: 30px;
+
+    }
+
+
+}
+
 /* 關於我們 */
 .About {
     width: 100%;
@@ -459,6 +665,34 @@ body {
     margin-top: 30px;
     margin-right: 50px;
 }
+
+/* 要在原本CSS區塊下方 */
+@media (max-width:1440px) {
+    .About-img {
+        height: 500px;
+    }
+
+    .About-us {
+        margin-left: 100px;
+    }
+}
+
+
+/* 平板斷點 */
+@media(max-width:820px) {
+    .About-us {
+        margin-left: 80px;
+    }
+
+    .About-img {
+        width: 350px;
+        height: 400px;
+        border-radius: 0 0 0 250px;
+        margin-left: 30px;
+    }
+
+}
+
 
 
 /* 最新消息 */
@@ -531,6 +765,13 @@ h4 {
     height: 23px;
 }
 
+
+@media (max-width:1440px) {
+    .New {
+        margin-top: 100px;
+    }
+}
+
 /* 頁尾 */
 .footer {
     width: 100%;
@@ -542,75 +783,114 @@ h4 {
     justify-content: center;
 }
 
-.footerlogo{
+.footerlogo {
     width: 130px;
     height: 50px;
     background-image: url("./image/footer-logo.png");
-margin-top: 30px;
+    margin-top: 30px;
 }
 
-.phon{
+.phon {
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
 
-.phon p{
+.phon p {
     color: #fff;
     margin-left: 8px;
 }
 
-.phon img{
+.phon img {
     width: 20px;
     height: 20px;
 }
 
-.home{
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
+.home {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
 }
 
-.home p{
+.home p {
     color: #fff;
     margin-left: 8px;
 }
 
-.home img{
+.home img {
     width: 20px;
     height: 20px;
 }
 
-.footernav{
+.footernav {
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
 
-.footernav a{
-    color: #fff; 
+.footernav a {
+    color: #fff;
     margin: 20px;
     font-size: 1rem;
     text-decoration: none;
 }
 
-.end{
+.end {
     color: #fff;
     font-size: 0.8rem;
     margin-top: 30px;
 }
 
-.footertree{
+.footertree {
     width: 100%;
     height: 210px;
     position: absolute;
     bottom: 0;
 }
 
-.up{
+.up {
     position: absolute;
     z-index: 2;
     display: flex;
     align-items: center;
-     flex-direction: column;
+    flex-direction: column;
+}
+
+/* 要在原本CSS區塊下方 */
+/* 筆電板的斷點 */
+@media (max-width:1440px) {
+
+    .footer {
+        position: relative;
+
+    }
+
+
+    .footertree img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+    }
+
+}
+
+/* 平板斷點 */
+@media(max-width:820px) {
+
+    .footer {
+        position: relative;
+
+    }
+
+
+    .footertree img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+    }
+
 }

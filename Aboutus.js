@@ -36,17 +36,17 @@
             autoplayTimeout: 3000,
             smartSpeed: 300,
          /*  navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'], */
-           /*  responsive: {
+         responsive: {
                 0: {
                     items: 1
                 },
-                768: {
+                820: {
                     items: 2
                 },
-                1170: {
+                1280: {
                     items: 3
                 }
-            } */
+            } 
         });
     });
 
